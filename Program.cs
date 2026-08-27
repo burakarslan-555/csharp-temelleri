@@ -1,43 +1,35 @@
-﻿Console.Write("Notunuzu girin: ");
-int not = int.Parse(Console.ReadLine());
+﻿
+Console.WriteLine("----MENÜ----");
+Console.WriteLine("1. - Merhaba de");
+Console.WriteLine("2. - Saati Göster");
+Console.WriteLine("3. - Çıkış");
+Console.Write("Seçiminiz: ");
 
-   if (not > 100 || not < 0)
+int secim = int.Parse(Console.ReadLine());
 
-   {
-    Console.WriteLine("Hatalı not girdiniz");
-   }
+switch (secim)
 
-
-
-else if (not >= 90)
 {
-    Console.WriteLine("Harf notunuz AA");
+    
+    case 1:
+Console.WriteLine("Merhaba Burak");
+
+break;
+
+case 2: 
+
+Console.WriteLine(DateTime.Now);
+
+break;
+
+case 3:
+ Console.WriteLine("Program sonlandırılıyor");
+
+ break;
+
+default:
+
+Console.WriteLine("Geçersiz seçim");
+
+break;
 }
-
-else if (not >= 80 )
-{
-    Console.WriteLine("Harf notunuz BA");
-
-}
-else if (not >= 70 )
-{
-    Console.WriteLine("Harf notunuz BB");
-
-}
-else if (not >= 60 )
-{
-    Console.WriteLine("Harf notunuz CB");
-
-
-}
-else if (not >= 50 )
-{
-    Console.WriteLine("Harf notunuz CC");
-
-}
-else 
-{
-    Console.WriteLine("Harf notunuz FF");
-
-}
-
