@@ -1,19 +1,43 @@
-﻿string kursAdi =".NET ile C# Programlama Dili";
+﻿Console.Write("Notunuzu girin: ");
+int not = int.Parse(Console.ReadLine());
 
-var karakterSayisi = kursAdi.Length;
- Console.WriteLine("Kaç karakterden olusuyor? " + karakterSayisi);
- 
- var kucukHarf = kursAdi.ToLower();
-Console.WriteLine(kucukHarf);
+   if (not > 100 || not < 0)
 
-var baslama = kursAdi.StartsWith(".");
-Console.WriteLine(" . ile basliyor mu? " + baslama);
+   {
+    Console.WriteLine("Hatalı not girdiniz");
+   }
 
-var iceriyor = kursAdi.Contains("C#");
-Console.WriteLine("içeriyor mu? " + iceriyor);
 
-var replace = kursAdi.Replace("Dili", "Dersleri");
-Console.WriteLine(replace);
 
-var konum = kursAdi.IndexOf("C#");
-Console.WriteLine("C# bilgisi hangi konumda? " + konum);
+else if (not >= 90)
+{
+    Console.WriteLine("Harf notunuz AA");
+}
+
+else if (not >= 80 )
+{
+    Console.WriteLine("Harf notunuz BA");
+
+}
+else if (not >= 70 )
+{
+    Console.WriteLine("Harf notunuz BB");
+
+}
+else if (not >= 60 )
+{
+    Console.WriteLine("Harf notunuz CB");
+
+
+}
+else if (not >= 50 )
+{
+    Console.WriteLine("Harf notunuz CC");
+
+}
+else 
+{
+    Console.WriteLine("Harf notunuz FF");
+
+}
+
