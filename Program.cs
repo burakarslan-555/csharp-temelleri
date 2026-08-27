@@ -1,35 +1,36 @@
-﻿
-Console.WriteLine("----MENÜ----");
-Console.WriteLine("1. - Merhaba de");
-Console.WriteLine("2. - Saati Göster");
-Console.WriteLine("3. - Çıkış");
-Console.Write("Seçiminiz: ");
+﻿Random rnd = new Random();
+int hedef = rnd.Next(1, 100);
 
-int secim = int.Parse(Console.ReadLine());
+Console.Write("Sayı seçiniz: ");
 
-switch (secim)
+int sayi = int.Parse(Console.ReadLine());
+
+while (sayi != hedef)
 
 {
     
-    case 1:
-Console.WriteLine("Merhaba Burak");
+    
+    if (sayi < hedef)
+    {
+    Console.WriteLine("Daha büyük rakam giriniz");
+    }
 
-break;
+    else 
+    {
+    Console.WriteLine("Daha küçük rakam giriniz");
+    }
+     sayi = int.Parse(Console.ReadLine());
 
-case 2: 
-
-Console.WriteLine(DateTime.Now);
-
-break;
-
-case 3:
- Console.WriteLine("Program sonlandırılıyor");
-
- break;
-
-default:
-
-Console.WriteLine("Geçersiz seçim");
-
-break;
 }
+
+Console.Write("Tebrikler ");
+
+int toplam = 0;
+for (int i = 1 ; i <= 100; i++)
+{
+    toplam = toplam + i;
+
+
+}
+Console.WriteLine(toplam);
+
