@@ -1,8 +1,28 @@
-﻿string [] duraklar = {"Pendik" , "Kartal" , "Maltepe" , "Kadıkoy "};
+﻿
 
-foreach (string durak in duraklar)
+for (int i = 1 ; i <= 100; i++)
+
 {
-    Console.WriteLine(durak);
-
+    if (i % 3== 0 && i % 5 == 0)
+{
+    Console.WriteLine("FizzBuzz");
 }
-Console.WriteLine(duraklar.Length);
+
+    else if (i % 3 == 0)
+
+    {
+        Console.WriteLine("Fizz");
+
+    }
+else if ( i % 5 == 0)
+
+    {
+        
+        Console.WriteLine("Buzz");
+    }
+
+else
+{
+        Console.WriteLine(i);
+    }
+}
