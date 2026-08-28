@@ -1,28 +1,8 @@
-﻿
+﻿int sonuc = Topla(3, 5);
+Console.WriteLine(sonuc);
 
-for (int i = 1 ; i <= 100; i++)
-
+int Topla(int a , int b)
 {
-    if (i % 3== 0 && i % 5 == 0)
-{
-    Console.WriteLine("FizzBuzz");
+    return a + b;
 }
-
-    else if (i % 3 == 0)
-
-    {
-        Console.WriteLine("Fizz");
-
-    }
-else if ( i % 5 == 0)
-
-    {
-        
-        Console.WriteLine("Buzz");
-    }
-
-else
-{
-        Console.WriteLine(i);
-    }
-}
+Console.WriteLine(Topla(10, 20));
