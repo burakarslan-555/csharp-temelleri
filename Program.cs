@@ -1,29 +1,33 @@
-﻿class Program
-{
-    static void Main()
-    {
-        int sonuc = Topla(3, 5);
-        Console.WriteLine(sonuc);
+﻿// class Program
 
-        int sonuc2 = Topla(3, 5, 10);
-        Console.WriteLine(sonuc2);
-    }
+// {
+//     static void Main()
+
+//     {
+
+//       int para = 100;
+//       Harca(ref para);
+//       Console.WriteLine(para);
 
 
-    static int Topla(int a, int b)
+//     }
 
-    {
+// static void Harca(ref int miktar)
+// {
+//     miktar = miktar - 30;
 
-        return a + b;
 
-    }
+// }
 
-    static int Topla(int a, int b, int c)
+// }
 
-    {
+Console.Write("Sayı gir:");
+string girdi = Console.ReadLine();
 
-        return a + b + c;
+bool basarili = int.TryParse(girdi, out int sayi);
 
-    }
-}
+if (basarili)
+    Console.WriteLine("Sayı: " + sayi);
 
+else
+    Console.WriteLine("Bu sayı değil ki!");
