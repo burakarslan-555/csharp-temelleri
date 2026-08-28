@@ -1,8 +1,10 @@
-﻿int sonuc = Topla(3, 5);
-Console.WriteLine(sonuc);
+﻿SelamVer("Burak");
+SelamVer("Ayse");
 
-int Topla(int a , int b)
+void SelamVer(string isim)
 {
-    return a + b;
+    
+    
+    Console.WriteLine("Merhaba " + isim);
+
 }
-Console.WriteLine(Topla(10, 20));
