@@ -112,3 +112,4 @@
         return sayi1 / sayi2;
     }
 }
+
